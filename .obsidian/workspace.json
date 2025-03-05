@@ -39,12 +39,14 @@
             "id": "b6fda05038e9b7be",
             "type": "leaf",
             "state": {
-              "type": "mk-space",
+              "type": "markdown",
               "state": {
-                "path": "attach"
+                "file": "CS/git.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "attach"
+              "title": "git"
             }
           }
         ],
@@ -98,11 +100,11 @@
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "북마크"
+              "title": "Bookmarks"
             }
           },
           {
-            "id": "915f0dda0985e9e5",
+            "id": "12257fdc25d98fa7",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -180,12 +182,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "CS/git.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "개요"
+              "title": "Outline of git"
             }
           },
           {
@@ -194,8 +197,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           }
         ],
@@ -207,20 +210,18 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "github-sync:Sync with Remote": false,
-      "switcher:빠른 전환기 열기": false,
-      "daily-notes:오늘의 일일 노트 열기": false,
-      "graph:그래프 뷰 열기": false,
-      "canvas:새 캔버스 만들기": false,
-      "templates:템플릿 삽입": false,
-      "command-palette:명령어 팔레트 열기": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-git:Open Git source control": false,
-      "webpage-html-export:Export Vault to HTML": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "915f0dda0985e9e5",
+  "active": "b6fda05038e9b7be",
   "lastOpenFiles": [
+    "Tags",
     "gitignore",
     "MLDL/basic_데이터 구조.md",
     "MLDL/basic_모델 구조.md",
@@ -248,7 +249,6 @@
     "attach/IMG_9839.png",
     "attach/Pasted image 20250225222312.png",
     "attach/Pasted image 20250220191224.png",
-    "Tags",
     "CS/vscode .md",
     "attach/Pasted image 20250304163044.png",
     "attach/Pasted image 20250304163032.png",
