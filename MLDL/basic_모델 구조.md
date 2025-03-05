@@ -23,9 +23,7 @@
 5. 성능평가
 6. 모델배포    **torch.onnx**
 
-![[Pasted image 20250303103720.png]]
 
 
 
-
-![image](https://github.com/imim555/Note/raw/main/attachments/Pasted%20image%2020250225223338.png)
+![image](https://github.com/imim555/Note/raw/main/attachments/Pasted%20image%2020250303103720.png)
