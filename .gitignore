@@ -1,0 +1,9 @@
+/inbox/**
+/personal/**
+/.makemd/**
+/.obsidian/*
+!/.obsidian/config/
+/.space/**
+/.trash/**
+/Vault.md/**
+/.gitignore/**
