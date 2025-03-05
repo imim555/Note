@@ -898,6 +898,27 @@ git merge origin/main # 또는 git rebase origin/main
 
 ![[Pasted image 20250228182551.png]]
 
+
+
+# ingore
+
+Git에서 특정 파일이나 디렉터리를 추적하지 않으며 커밋 대상에서 제외한다. 불필요한 파일(예: 임시 파일, 빌드 결과물, 특정 환경에만 필요한 설정 파일 등)에 적용한다.
+
+- 문법
+	`temp` 특정 파일 무시
+	`file1/` 특정 디렉토리 무시
+	`*.log` 모든 .log 파일 무시
+	`!important.log` important.log 파일을 제외하고 .log 무시
+	`**/*.log` 모든 하위 디렉터리에 적용
+
+- 이미 커밋된 파일을 추적에서 제외
+	`git rm --cached <파일>` 
+
+- **전역 `.gitignore` 설정**: 여러 저장소에서 동일한 `.gitignore` 규칙을 사용하고 싶다면 전역 `.gitignore` 파일을 설정
+	`git config --global core.excludesfile ~/.gitignore_global`
+
+
+
 # tag
 
 브랜치는 참조하는 커밋이 계속 변동되지만
