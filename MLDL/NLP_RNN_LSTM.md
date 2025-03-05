@@ -89,8 +89,9 @@ weight tying : Embedding층과 Affine층의 가중치를 공유 ; dense_size = h
 
 ![[Pasted image 20250303114747.png]]
 
-# GRU (Gated Recurrent Unit)
+# GRU 
 
+Gated Recurrent Unit
 GRU는 은닉 상태를 업데이트하는 계산 줄여서 LSTM의 구조를 간단화
 GRU에서는 업데이트 게이트와 리셋 게이트 두 가지 게이트만이 존재한다. 
 
