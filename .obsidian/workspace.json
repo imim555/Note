@@ -222,8 +222,10 @@
       "webpage-html-export:Export Vault to HTML": false
     }
   },
-  "active": "b6fda05038e9b7be",
+  "active": "915f0dda0985e9e5",
   "lastOpenFiles": [
+    "personal/personal.md",
+    "personal",
     "MLDL/NLP_RNN_LSTM.md",
     "CS/CS 메뉴얼 기호 해석.md",
     "CS/git_toc.md",
