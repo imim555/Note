@@ -32,9 +32,11 @@
 
 
 - <span style="background:#d2cbff">생성형모델</span> *(chap.16-22)*
+	- [[NLP_발전과정]]
 	- [[NLP_gen_seq2seq|seq2seq]] 
-	- attention, Transformer, 
-	- BERT, GPT 
+	- [[NLP_gen_Attention|attention]], [[NLP_gen_Transformer|Transformer]] 
+	- [[NLP_gen_BERT|BERT]]
+	- GPT 
 
 
 - <span style="background:#d2cbff">전처리모델</span> *(chap.15)*

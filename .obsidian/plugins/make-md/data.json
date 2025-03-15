@@ -39,10 +39,12 @@
     "//git1",
     "//resource",
     "//NLP",
-    "//Tags",
     "/",
-    "//attachments",
-    "//MLDL"
+    "//MLDL",
+    "//inbox",
+    "//personal",
+    "//Tags",
+    "//CS"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
