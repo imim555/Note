@@ -4,24 +4,67 @@
     "type": "split",
     "children": [
       {
-        "id": "84a6e22147545e4b",
+        "id": "8502f82c548d4250",
         "type": "tabs",
         "children": [
           {
-            "id": "2b0569353c6bea06",
+            "id": "eee9fd2fa5c203bf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MLDL/NLP_gen_Attention.md",
+                "file": "MLDL/NLP_gen_BERT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "NLP_gen_Attention"
+              "title": "NLP_gen_BERT"
+            }
+          },
+          {
+            "id": "d416f2e7184d80eb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/NLP_RAG.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "NLP_RAG"
+            }
+          },
+          {
+            "id": "798b438c176c0eba",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/NLP_lib_toc.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "NLP_lib_toc"
+            }
+          },
+          {
+            "id": "eb62c8bf2d0451d8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "inbox/NLP_lib_toc.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "NLP_lib_toc"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -75,7 +118,7 @@
             }
           },
           {
-            "id": "0b2ed61c6ac6557c",
+            "id": "761c4e390486f947",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -191,8 +234,22 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "2b0569353c6bea06",
+  "active": "eb62c8bf2d0451d8",
   "lastOpenFiles": [
+    "inbox/NLP_lib_FlagEmbedding.md",
+    "inbox/NLP_lib_toc.md",
+    "MLDL/NLP_gen_BERT.md",
+    "inbox/NLP_RAG.md",
+    "MLDL/NPL_evaluation.md",
+    "MLDL/pytorch_tensor 조작.md",
+    "MLDL/무제.md",
+    "MLDL/NLP_toc.md",
+    "MLDL/NLP_발전과정.md",
+    "MLDL/NLP_RNN_Vanilla.md",
+    "MLDL/NLP_RNN_LSTM.md",
+    "MLDL/NLP_gen_seq2seq.md",
+    "MLDL/NLP_gen_Transformer.md",
+    "MLDL/NLP_gen_Attention.md",
     "attach/Pasted image 20250316115259.png",
     "attach/Pasted image 20250316115254.png",
     "attach/Pasted image 20250316115249.png",
@@ -203,34 +260,20 @@
     "attach/Pasted image 20250316115149.png",
     "attach/Pasted image 20250316115143.png",
     "attach/Pasted image 20250316115136.png",
-    "attach/Pasted image 20250316115129.png",
-    "MLDL/NLP_gen_seq2seq.md",
-    "MLDL/NLP_gen_Attention.md",
-    "MLDL/NLP_gen_Transformer.md",
-    "MLDL/NLP_gen_BERT.md",
     "attachments",
-    "MLDL/NLP_toc.md",
     "personal/일기.md",
     "CS/git.md",
     "Tags",
-    "MLDL/NLP_발전과정.md",
     "CS/CT_level_0.md",
     "CS/CS.md",
     "README.md",
     "personal/personal.md",
     "무제.md",
     "무제zz.md",
-    "MLDL/무제.md",
     "CS/vscode .md",
     "CS/CS 메뉴얼 기호 해석.md",
-    "MLDL/NPL_evaluation.md",
-    "MLDL/NLP_RNN_LSTM.md",
-    "MLDL/pytorch_tensor 조작.md",
     "MLDL/pytorch_scatter.md",
     "MLDL/pytorch 구조.md",
-    "MLDL/NLP_RNN_Vanilla.md",
-    "MLDL/basic_데이터 구조.md",
-    "MLDL/basic_모델 구조.md",
     "gitignore",
     "personal",
     "MLDL",
