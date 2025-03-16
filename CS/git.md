@@ -911,6 +911,7 @@ Git에서 특정 파일이나 디렉터리를 추적하지 않으며 커밋 대�
 	`!important.log` important.log 파일을 제외하고 .log 무시
 	`**/*.log` 모든 하위 디렉터리에 적용
 
+
 - 이미 커밋된 파일을 추적에서 제외
 	`git rm --cached <파일>` 
 	`git rm -cached -r inbox/`
