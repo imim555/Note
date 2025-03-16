@@ -13,30 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "personal/일기.md",
+                "file": "MLDL/NLP_gen_Attention.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "일기"
-            }
-          },
-          {
-            "id": "e870fec0e92c7310",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CS/git.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "git"
+              "title": "NLP_gen_Attention"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -90,7 +75,7 @@
             }
           },
           {
-            "id": "29e54d08e4b4e6c9",
+            "id": "0b2ed61c6ac6557c",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -206,34 +191,36 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e870fec0e92c7310",
+  "active": "2b0569353c6bea06",
   "lastOpenFiles": [
-    "inbox/NLP_gen_BERT.md",
-    "attachments/Pasted image 20250316095629.png",
-    "attachments/Pasted image 20250316095619.png",
-    "attachments/Pasted image 20250316095223.png",
-    "attachments/Pasted image 20250316095002.png",
-    "attachments/Pasted image 20250316094324.png",
-    "attachments/Pasted image 20250316094319.png",
-    "attachments/Pasted image 20250316085841.png",
-    "attachments/Pasted image 20250316085730.png",
-    "attachments/Pasted image 20250316085717.png",
-    "attachments/Pasted image 20250316084214.png",
-    "personal/일기.md",
-    "Tags",
+    "attach/Pasted image 20250316115259.png",
+    "attach/Pasted image 20250316115254.png",
+    "attach/Pasted image 20250316115249.png",
+    "attach/Pasted image 20250316115243.png",
+    "attach/Pasted image 20250316115240.png",
+    "attach/Pasted image 20250316115238.png",
+    "attach/Pasted image 20250316115217.png",
+    "attach/Pasted image 20250316115149.png",
+    "attach/Pasted image 20250316115143.png",
+    "attach/Pasted image 20250316115136.png",
+    "attach/Pasted image 20250316115129.png",
+    "MLDL/NLP_gen_seq2seq.md",
+    "MLDL/NLP_gen_Attention.md",
+    "MLDL/NLP_gen_Transformer.md",
+    "MLDL/NLP_gen_BERT.md",
+    "attachments",
     "MLDL/NLP_toc.md",
+    "personal/일기.md",
+    "CS/git.md",
+    "Tags",
     "MLDL/NLP_발전과정.md",
     "CS/CT_level_0.md",
     "CS/CS.md",
-    "MLDL/NLP_gen_Transformer.md",
-    "MLDL/NLP_gen_Attention.md",
     "README.md",
     "personal/personal.md",
     "무제.md",
     "무제zz.md",
-    "MLDL/NLP_gen_seq2seq.md",
     "MLDL/무제.md",
-    "attachments",
     "CS/vscode .md",
     "CS/CS 메뉴얼 기호 해석.md",
     "MLDL/NPL_evaluation.md",
@@ -244,7 +231,6 @@
     "MLDL/NLP_RNN_Vanilla.md",
     "MLDL/basic_데이터 구조.md",
     "MLDL/basic_모델 구조.md",
-    "MLDL/MLDL.md",
     "gitignore",
     "personal",
     "MLDL",

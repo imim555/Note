@@ -21,20 +21,20 @@ RNN에 기반한 seq2seq 모델에는 크게 두 가지 문제가 있습니다.
 - K (Keys) : 인코더에서 입력된 모든 단어들 -> 모든 시점의 인코더 셀의 은닉 상태들 
 - V (Values) :  각각의 키에 대한 쿼리와의 유사도 -> 모든 시점의 인코더 셀의 은닉 상태들
 
-![[Pasted image 20250313135425.png]]
 
 
+![[Pasted image 20250316115025.png]]
 
 ## 닷-프로덕트 어텐션(Dot-Product Attention, 루옹)
 
 아래 그림은 디코더의 세번째 LSTM 셀에서 출력 단어를 예측할 때, 어텐션 메커니즘을 사용하는 모습이다. 디코더에서 3번째 LSTM 셀은 출력 단어를 예측하기 위해 히든값을 인코더로 전달하여, 인코더의 입력문장의 정보를 다시 한번 참고한다. 입력문장의 각 단어들(I, am, a, student) 과 유사도를 계산한다. 소프트맥스 함수를 통해 나온 결과값이 I, am, a, student 단어 각각이 출력 단어를 예측할 때 얼마나 도움이 되는지의 정도를 수치화한 값이다. 이 결과값들을 하나의 정보로 담아 디코더로 전송한다.
 
-![[Pasted image 20250313141015.png]]
 
+![[Pasted image 20250316115031.png]]
 ### 1) 어텐션 스코어
 
-![[Pasted image 20250313141114.png]]
 
+![[Pasted image 20250316115036.png]]
 
 
 - 가정
@@ -50,6 +50,8 @@ RNN에 기반한 seq2seq 모델에는 크게 두 가지 문제가 있습니다.
 
 어텐션 스코어란 현재 디코더의 시점 t에서 단어를 예측하기 위해, 인코더의 모든 은닉 상태 각각이 디코더의 현 시점의 은닉 상태 st와 얼마나 유사한지를 판단하는 스코어값이다. 닷-프로덕트 어텐션에서는 이 스코어 값을 구하기 위해 st를 전치(transpose)하고 각 은닉 상태와 내적(dot product)을 수행한다. st를 출력벡터, 인코더 단어의 은닉상태를 입력벡터로 생각하자.
 
+![[Pasted image 20250316115129.png]]
+
 $score(s_{t},\ h_{i}) = s_{t}^Th_{i}$
 
 $e^{t}=[s_{t}^Th_{1},...,s_{t}^Th_{N}]$
@@ -62,6 +64,8 @@ et에 소프트맥스 함수를 적용하여, 모든 값을 합하면 1이 되�
 
 $α^{t} = softmax(e^{t})$
 
+![[Pasted image 20250316115118.png]]
+
 
 ### 3) 어텐션 가중치들과 은닉 상태를 가중합 -> 어텐션 값(Attention Value)
 이러한 어텐션 값 at은 종종 인코더의 문맥을 포함하고 있다고하여,<span style="background:rgba(240, 107, 5, 0.2)"> 컨텍스트 벡터(context vector)</span>라고도 한다. 앞서 배운 가장 기본적인 seq2seq에서는 인코더의 마지막 은닉 상태를 컨텍스트 벡터라고 부르는 것과 대조된다.
@@ -69,13 +73,13 @@ $α^{t} = softmax(e^{t})$
 $a_{t}=\sum_{i=1}^{N} α_{i}^{t}h_{i}$
 
 
-
+![[Pasted image 20250316115136.png]]
 
 ### 4) 어텐션 값과 디코더의 t 시점의 은닉 상태를 연결(Concatenate)
  $a_t$를 $s_t$와 결합(concatenate)하여 하나의 벡터 $v_t$로 만든다.
  
 
-![[Pasted image 20250313142453.png]]
+![[Pasted image 20250316115143.png]]
 
 
 
@@ -85,7 +89,7 @@ $a_{t}=\sum_{i=1}^{N} α_{i}^{t}h_{i}$
 
 $\tilde{s}_{t} = \tanh(\mathbf{W_{c}}[{a}_t;{s}_t] + b_{c})$
 
-![[Pasted image 20250313142557.png]]
+![[Pasted image 20250316115149.png]]
 
 
 ### 6) $\widehat{y}_t$ 예측
@@ -98,9 +102,9 @@ $\widehat{y}_t = \text{Softmax}\left( W_y\tilde{s}_t + b_y \right)$
 
 
 
-![[Pasted image 20250313142957.png]]
 
 
+![[Pasted image 20250316115217.png]]
 
 
 ## 바다나우 어텐션(Bahdanau Attention)
@@ -118,13 +122,13 @@ $score(s_{t-1},\ h_{i}) = W_{a}^{T}\ tanh(W_{b}s_{t-1}+W_{c}h_{i})$
 $e^t=score(s_{t-1},\ H) = W_{a}^{T}\ tanh(W_{b}s_{t-1}+W_{c}H)$
 
 
-
-![[Pasted image 20250313143810.png]]
-
-![[Pasted image 20250313143814.png]]
+![[Pasted image 20250316115238.png]]
+![[Pasted image 20250316115240.png]]
 
 
-![[Pasted image 20250313143818.png]]
+![[Pasted image 20250316115243.png]]
+
+
 
 
 
@@ -132,16 +136,17 @@ $e^t=score(s_{t-1},\ H) = W_{a}^{T}\ tanh(W_{b}s_{t-1}+W_{c}H)$
 ### 2) 어텐션 분포
 $e^t$ 에 소프트맥스 함수를 적용하여 모든 값을 합하면 1이 되는 확률분포는 얻는다. 
 
-![[Pasted image 20250313143935.png]]
+![[Pasted image 20250316115249.png]]
 
 ### 3) 어텐션 값
 각 인코더의 어텐션 가중치와 은닉상태를 가중합하여 어텐션 값을 얻는다.
 
-![[Pasted image 20250313143941.png]]
+![[Pasted image 20250316115254.png]]
 
 
 ### 4) $s_t$ 계산
 컨텍스트 벡터와 현재 시점의 입력단어의 임베딩벡터를 연결해서 $v_t$ 를 얻는다 
 이전 시점의 셀로부터 전달받은 은닉상태 $s_{t-1}$ 와 $v_t$ 를 입력해서 $s_t$ 를 얻는다
 
-![[Pasted image 20250313144333.png]]
+
+![[Pasted image 20250316115259.png]]
