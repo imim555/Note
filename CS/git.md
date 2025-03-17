@@ -919,7 +919,8 @@ Git에서 특정 파일이나 디렉터리를 추적하지 않으며 커밋 대�
 - **전역 `.gitignore` 설정**: 여러 저장소에서 동일한 `.gitignore` 규칙을 사용하고 싶다면 전역 `.gitignore` 파일을 설정
 	`git config --global core.excludesfile ~/.gitignore_global`
 
-
+.obsidian/workspace.json
+.obsidian/plugins/make-md/Spaces.mdb
 
 # tag
 
